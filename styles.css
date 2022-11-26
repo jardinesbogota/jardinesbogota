@@ -1,7 +1,40 @@
 #bogotaAdministrativeMap {
+   background-color: #DDF6FF;
    position: absolute;
    left: 0%;
    top: 0%;
    height: 100%;
-   width: 80%;;
+   width: 75%;;
+}
+
+@font-face {
+   font-family: Lato;
+   font-style: normal;
+   font-weight: 400;
+   src: url("https://mdn.github.io/web-fonts/LatoReg.ttf");
+ }
+
+body {
+   overflow: hidden;
+}
+
+h1 {
+   margin: 20px;
+   font-family: Lato, sans-serif;
+   font-size: 28px;
+}
+
+#menu {
+   position: absolute;
+   top: 0%;
+   right: 0%;
+   width: 25%;
+   height: 100%;
+}
+
+#image {
+   position: static;
+   top: 0%;
+   right: 0%;
+   width: 100%;
 }
