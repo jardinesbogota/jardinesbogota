@@ -1,21 +1,27 @@
-#bogotaAdministrativeMap {
-   background-color: #DDF6FF;
-   position: absolute;
-   left: 0%;
-   top: 0%;
-   height: 100%;
-   width: 75%;;
-}
-
 @font-face {
    font-family: Lato;
    font-style: normal;
    font-weight: 400;
    src: url("https://mdn.github.io/web-fonts/LatoReg.ttf");
- }
+}
 
-body {
+html {
+   background-color: #DDF6FF;
+   background-size: 35%;
    overflow: hidden;
+}
+
+#background {
+   position: absolute;
+   top: -100%;
+   left: -100%;
+   background-image: url("images/background.png");
+   background-color: #DDF6FF;
+   background-size: 25%;
+   width: 200%;
+   height: 400%;
+   z-index: -1;
+   transform: rotate(-20deg);
 }
 
 h1 {
@@ -24,12 +30,41 @@ h1 {
    font-size: 28px;
 }
 
+#title {
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   height: 8%;
+   z-index: 2;
+}
+
+#blueband {
+   position: absolute;
+   background-color: #43ceff;
+   top: 1.5%;
+   left: 0%;
+   width: 100%;
+   height: 2%;
+   z-index: 1;
+}
+
+#bogotaAdministrativeMap {
+   position: absolute;
+   left: 0%;
+   top: 10%;
+   height: 92%;
+   width: 75%;
+   z-index: 1;
+}
+
 #menu {
    position: absolute;
+   background-color: white;
    top: 0%;
    right: 0%;
    width: 25%;
    height: 100%;
+   box-shadow: -0.5px 0px 5px 1px #637080;
 }
 
 #image {

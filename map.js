@@ -47,12 +47,13 @@ area.out = (map, mapText) => {
    }
 }
 
-area.zoom = (map, mapText) => {
+area.zoom = (map, mapText, info) => {
    isGeneralMap = false;
+   map.style.opacity = 1;
    mapText.style.visibility = 'hidden';
    let _generalMap = generalMap.getElementById("bogotaAdministrativeMap");
-   _generalMap.setAttribute("viewBox", `${map.x} ${map.y} ${map.width} ${map.height}`);
-   areaName.innerHTML = map.name;
+   _generalMap.setAttribute("viewBox", `${info.x} ${info.y} ${info.width} ${info.height}`);
+   areaName.innerHTML = info.name;
 }
 
 mapId.addEventListener("load", () => {
@@ -65,6 +66,6 @@ mapId.addEventListener("load", () => {
       mapText.addEventListener('mouseenter', () => { area.enter(map, mapText); });
       map.addEventListener('mouseenter', () => { area.enter(map, mapText); });
       map.addEventListener('mouseout', () => { area.out(map, mapText); });
-      map.addEventListener('click', () => { area.zoom(_area, mapText); });
+      map.addEventListener('click', () => { area.zoom(map, mapText, _area); });
    }
 });
