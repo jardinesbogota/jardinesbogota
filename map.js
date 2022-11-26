@@ -20,7 +20,7 @@ const areas = [
    { name: "Antonio Nariño", map: 'antonioNarinoMap', text: 'antonioNarinoMapText', x: 340.1, y: 148.2, width: 34, height: 66.3 },
    { name: "Puente Aranda", map: 'puenteArandaMap', text: 'puenteArandaMapText', x: 274.8, y: 148.9, width: 72.5, height: 75.7 },
    { name: "La Candelaria", map: 'candelariaMap', text: 'candelariaMapText', x: 333.3, y: 111, width: 21.6, height: 31 },
-   { name: "Rafel Uribe", map: 'rafaelUribeMap', text: 'rafaelUribeMapText', x: 149.6, y: 161.4, width: 75.7, height: 52.8 },
+   { name: "Rafael Uribe", map: 'rafaelUribeMap', text: 'rafaelUribeMapText', x: 349.6, y: 161.4, width: 75.7, height: 52.8 },
    { name: "Ciudad Bolívar", map: 'ciudadBolivarMap', text: 'ciudadBolivarMapText', x: 337.9, y: 199, width: 306.7, height: 129.60 },
    { name: "Sumapaz", map: 'sumapazMap', text: 'sumapazMapText', x: 633.3, y: 158.8, width: 107.5, height: 187.8 }
 ];
